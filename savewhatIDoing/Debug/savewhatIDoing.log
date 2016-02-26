@@ -1,0 +1,142 @@
+﻿生成启动时间为 2016/2/25 22:06:14。
+     1>项目“E:\vs2010project\savewhatIDoing\savewhatIDoing\savewhatIDoing.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\savewhatIDoing.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         I:\vs2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\savewhatIDoing.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt processPath.cpp
+         processPath.cpp
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(7): warning C4627: “#include <windows.h>”: 在查找预编译头使用时跳过
+                 将指令添加到“StdAfx.h”或重新生成预编译头
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(8): warning C4627: “#include <tlhelp32.h>”: 在查找预编译头使用时跳过
+                 将指令添加到“StdAfx.h”或重新生成预编译头
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14): error C2146: 语法错误: 缺少“;”(在标识符“GetProcessList”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C2146: 语法错误: 缺少“;”(在标识符“ListProcessModules”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C2086: “int BOOL”: 重定义
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14) : 参见“BOOL”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C2065: “DWORD”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C2146: 语法错误: 缺少“)”(在标识符“dwPID”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15): error C2059: 语法错误:“)”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C2146: 语法错误: 缺少“;”(在标识符“ListProcessThreads”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C2086: “int BOOL”: 重定义
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14) : 参见“BOOL”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C2065: “DWORD”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C2146: 语法错误: 缺少“)”(在标识符“dwOwnerPID”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16): error C2059: 语法错误:“)”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(21): error C2146: 语法错误: 缺少“;”(在标识符“GetProcessList”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(21): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(21): error C2086: “int BOOL”: 重定义
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14) : 参见“BOOL”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(22): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(23): error C2065: “HANDLE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(23): error C2146: 语法错误: 缺少“;”(在标识符“hProcessSnap”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(23): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(24): error C2065: “HANDLE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(24): error C2146: 语法错误: 缺少“;”(在标识符“hProcess”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(24): error C2065: “hProcess”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(25): error C2065: “PROCESSENTRY32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(25): error C2146: 语法错误: 缺少“;”(在标识符“pe32”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(25): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(26): error C2065: “DWORD”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(26): error C2146: 语法错误: 缺少“;”(在标识符“dwPriorityClass”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(26): error C2065: “dwPriorityClass”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(29): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(29): error C2065: “TH32CS_SNAPPROCESS”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(29): error C3861: “CreateToolhelp32Snapshot”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(30): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(30): error C2065: “INVALID_HANDLE_VALUE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(33): error C2065: “FALSE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(37): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(37): error C2228: “.dwSize”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(37): error C2065: “PROCESSENTRY32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(37): error C2070: “'unknown-type'”: 非法的 sizeof 操作数
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(41): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(41): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(41): error C3861: “Process32First”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(44): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(44): error C3861: “CloseHandle”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(46): error C2065: “FALSE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(55): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(55): error C2228: “.szExeFile”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(60): error C2065: “dwPriorityClass”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(61): error C2065: “hProcess”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(62): error C2065: “PROCESS_ALL_ACCESS”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(62): error C2065: “FALSE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(62): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(62): error C2228: “.th32ProcessID”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(61): error C3861: “OpenProcess”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(63): error C2065: “hProcess”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(67): error C2065: “dwPriorityClass”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(67): error C2065: “hProcess”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(67): error C3861: “GetPriorityClass”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(68): error C2065: “dwPriorityClass”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(70): error C2065: “hProcess”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(70): error C3861: “CloseHandle”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(73): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(73): error C2228: “.th32ProcessID”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(82): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(82): error C2228: “.th32ProcessID”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(82): error C2064: 项不会计算为接受 1 个参数的函数
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(83): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(83): error C2228: “.th32ProcessID”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(83): error C2064: 项不会计算为接受 1 个参数的函数
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(85): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(85): error C2065: “pe32”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(85): error C3861: “Process32Next”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(87): error C2065: “hProcessSnap”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(87): error C3861: “CloseHandle”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(88): error C2065: “TRUE”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C2146: 语法错误: 缺少“;”(在标识符“ListProcessModules”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C2086: “int BOOL”: 重定义
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14) : 参见“BOOL”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C2065: “DWORD”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C2146: 语法错误: 缺少“)”(在标识符“dwPID”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C2374: “ListProcessModules”: 重定义；多次初始化
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(15) : 参见“ListProcessModules”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(92): error C2059: 语法错误:“)”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(93): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(93): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C2146: 语法错误: 缺少“;”(在标识符“ListProcessThreads”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C2086: “int BOOL”: 重定义
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(14) : 参见“BOOL”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C2065: “DWORD”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C2146: 语法错误: 缺少“)”(在标识符“dwOwnerPID”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C2374: “ListProcessThreads”: 重定义；多次初始化
+                 e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(16) : 参见“ListProcessThreads”的声明
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(143): error C2059: 语法错误:“)”
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(144): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(144): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(185): error C2065: “DWORD”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(185): error C2146: 语法错误: 缺少“;”(在标识符“eNum”的前面)
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(185): error C2065: “eNum”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(189): error C2065: “eNum”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(189): error C3861: “GetLastError”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(191): error C2065: “FORMAT_MESSAGE_FROM_SYSTEM”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(191): error C2065: “FORMAT_MESSAGE_IGNORE_INSERTS”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(192): error C2065: “eNum”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(193): error C2065: “LANG_NEUTRAL”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(193): error C2065: “SUBLANG_DEFAULT”: 未声明的标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(190): error C3861: “FormatMessage”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(193): error C3861: “MAKELANGID”: 找不到标识符
+     1>e:\vs2010project\savewhatidoing\savewhatidoing\processpath.cpp(205): error C2065: “eNum”: 未声明的标识符
+     1>已完成生成项目“E:\vs2010project\savewhatIDoing\savewhatIDoing\savewhatIDoing.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.72
