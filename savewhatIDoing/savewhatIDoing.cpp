@@ -1,13 +1,17 @@
 // savewhatIDoing.cpp : 定义控制台应用程序的入口点。
 /*
 2016.1.20  v1.0
-保存当前桌面工作内容，读取系统中已打开的软件，读取浏览器中打开的网页，以及软件中打开的文档，
-下次开机前，打开这些内容。
+功能：保存当前桌面工作内容，读取系统中已打开的软件，读取浏览器中打开的网页，以及软件中打开的文档，下次开机前，打开这些内容。
+
 栈结构，保存当前鼠标的位置，
 可添加手动模式，在一个对话框中放入想要打开的软件和浏览器网页，以及文档。
 
 怎么读取有哪些软件Adminster使用？
 errror createprocess失败;错误码2运行某程序时需要调用其他程序。而需被调动程序不存
+
+判别cpu利用率高以及用户权限的软件出来，获取其名字，句柄 以及绝对路径
+遍历整个进程表，获取相应的进程的cpu最高利用率，存储在一个文本data中，有编号，进程句柄，绝对路径，使用频率的估计（后期加），优先打开参数级
+	
 */
 
 #include "stdafx.h"
@@ -17,49 +21,49 @@ errror createprocess失败;错误码2运行某程序时需要调用其他程序。而需被调动程序不存
 #include <TlHelp32.h>
 #include "CpuUsage.h"
 #include "CpuUsage2.h"
-#include "processPath.h"
+//#include "processPath.h"
 #include <comdef.h>
 #include <dos.h>
 #include <vector>
 #include <fstream>
+#include <string>
+#include <AtlBase.h>
+#include <AtlConv.h>
 using namespace std;
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	//判别cpu利用率高以及用户权限的软件出来，获取其名字，句柄 以及绝对路径
-	//遍历整个进程表，获取相应的进程的cpu最高利用率，存储在一个文本data中，有编号，进程句柄，绝对路径，使用频率的估计（后期加），优先打开参数级
-	
+
 	//判断为开机后，即开始新建进程 
 	STARTUPINFO si;
-   PROCESS_INFORMATION pi;//
-//	ifstream ifpath("itemp.txt");
-	//ofstream ofpath("otemp.txt");;
+    PROCESS_INFORMATION pi;
 	fstream fs("saveSoft.txt",ios::in|ios::out);
-
 	if(!fs.bad())
 	{
-		fs<<"Hello Dear\n"<<flush;  //flush刷新缓冲区，即数据真正写到输出设备或文件
-		fs.close();	
-		
-		fs.open("saveSoft.txt",ios::in);
-		cout<<fs.rdbuf();
-		fs.close();
+		fs<<"Hello Lover\n"<<flush;  //flush刷新缓冲区，即数据真正写到输出设备或文件
+		//fs.close();	
+		//fs.open("saveSoft.txt",ios::in);
+		//cout<<fs.rdbuf();
+		//fs.close();
 	}
 	else
 	{
 		printf("open file failure");
 	}
+
     ZeroMemory( &si, sizeof(si) );
     si.cb = sizeof(si);
     ZeroMemory( &pi, sizeof(pi) );
-
-	//LPTSTR szCmdline = _tcsdup(TEXT("C:\\Program Files\\MyApp -L -S"));
 	printf("It's a beginning\n");
 	printf("在windows上打开酷狗\n");
 	//system("C:\Program Files (x86)\kuwo\kuwomusic\8.0.3.1_UG6\bin\KwMusic.exe");
 	LPTSTR szCmdline = _tcsdup(TEXT("I:\\QQ\\qqmusic\\QQMusic1224.17.46.6\\QQMusic.exe -L -S"));
-	
+	_bstr_t bstr;
+	bstr=szCmdline;
+	string str=bstr;
+	fs<<str<<flush;;
+	cout<<str<<endl;
 	//CreateProcess(NULL,szCmdline,);
 	int temp=0;
     if( !(CreateProcess( NULL,   // No module name (use command line)

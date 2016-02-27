@@ -4,21 +4,26 @@
 //A simple error-reporting function, printError, displays the reason for any failures, which usually result from security restrictions.
 
 #include "stdafx.h"
+#include <stdio.h>
+#include "processPath.h"
 #include <windows.h>
 #include <tlhelp32.h>
-#include <stdio.h>
 #include <tchar.h>
-
+#include <string>
 
 //  Forward declarations:
-BOOL GetProcessList();
-BOOL ListProcessModules( DWORD dwPID );
-BOOL ListProcessThreads( DWORD dwOwnerPID );
-void printError( TCHAR* msg );
+//BOOL GetProcessList();
+//BOOL ListProcessModules( DWORD dwPID );
+//BOOL ListProcessThreads( DWORD dwOwnerPID );
+//void printError( TCHAR* msg );
+
+CMyProcess::CMyProcess()
+{
+	int i;
+}
 
 
-
-BOOL GetProcessList()
+BOOL CMyProcess::GetProcessList()
 {
   HANDLE hProcessSnap;
   HANDLE hProcess;
@@ -64,10 +69,10 @@ BOOL GetProcessList()
       printError( _T("OpenProcess") );
     else
     {
-      dwPriorityClass = GetPriorityClass( hProcess );
-      if( !dwPriorityClass )
-        printError( _T("GetPriorityClass") );
-      CloseHandle( hProcess );
+		dwPriorityClass = GetPriorityClass( hProcess );
+		if( !dwPriorityClass )
+			printError( _T("GetPriorityClass") );
+        CloseHandle( hProcess );
     }
 
     printf( "\n  process ID        = 0x%08X", pe32.th32ProcessID );
@@ -89,7 +94,7 @@ BOOL GetProcessList()
 }
 
 
-BOOL ListProcessModules( DWORD dwPID )
+BOOL CMyProcess::ListProcessModules( DWORD dwPID )
 {
   HANDLE hModuleSnap = INVALID_HANDLE_VALUE;
   MODULEENTRY32 me32;
@@ -120,7 +125,7 @@ BOOL ListProcessModules( DWORD dwPID )
   do
   {
     printf( "\n\n     MODULE NAME:     %s",
-      me32.szModule );k
+      me32.szModule );
     printf( "\n     executable     = %s",
       me32.szExePath );
     printf( "\n     process ID     = 0x%08X",
@@ -140,7 +145,7 @@ BOOL ListProcessModules( DWORD dwPID )
   return( TRUE );
 }
 
-BOOL ListProcessThreads( DWORD dwOwnerPID ) 
+BOOL CMyProcess::ListProcessThreads( DWORD dwOwnerPID ) 
 { 
   HANDLE hThreadSnap = INVALID_HANDLE_VALUE; 
   THREADENTRY32 te32; 
@@ -180,7 +185,7 @@ BOOL ListProcessThreads( DWORD dwOwnerPID )
   return( TRUE );
 }
 
-void printError( TCHAR* msg )
+void CMyProcess::printError( TCHAR* msg )
 {
   DWORD eNum;
   TCHAR sysMsg[256];
