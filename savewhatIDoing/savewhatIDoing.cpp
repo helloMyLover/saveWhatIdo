@@ -39,15 +39,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	STARTUPINFO si;
     PROCESS_INFORMATION pi;
 	fstream fs("saveSoft.txt",ios::in|ios::out);
-	if(!fs.bad())
-	{
-		fs<<"Hello Lover\n"<<flush;  //flush刷新缓冲区，即数据真正写到输出设备或文件
-		//fs.close();	
-		//fs.open("saveSoft.txt",ios::in);
-		//cout<<fs.rdbuf();
-		//fs.close();
-	}
-	else
+	if(fs.bad())
 	{
 		printf("open file failure");
 	}
@@ -62,8 +54,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	_bstr_t bstr;
 	bstr=szCmdline;
 	string str=bstr;
-	fs<<str<<flush;;
-	cout<<str<<endl;
+	fs<<str<<flush;  //flush刷新缓冲区，即数据真正写到输出设备或文件  
+	cout<<str<<endl;  //cout<<fs.rdbuf(); 打印fs中的内容
 	//CreateProcess(NULL,szCmdline,);
 	int temp=0;
     if( !(CreateProcess( NULL,   // No module name (use command line)
