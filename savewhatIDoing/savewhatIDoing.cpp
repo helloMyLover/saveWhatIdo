@@ -155,30 +155,3 @@ int _tmain(int argc, _TCHAR* argv[])
 
 
 
-////main.cpp
-//
-//#include "cpuusage.h"
-//#include <fstream>
-//#include <cstdlib>
-//#include <cstdio>
-//using namespace std;
-//
-//const int second = 1000;
-//
-//int main(int argc, char* argv[])
-//{
-//    if(argc != 2)
-//    {
-//        printf("Use the toolkit like: <toolkit name> <pid>\n");
-//        return 0;
-//    }
-//    DWORD dwProcId = atoi(argv[1]);
-//    CpuUsage cu(dwProcId);
-//    SYSTEMTIME st;
-//    while(true)
-//    {
-//        GetLocalTime(&st);
-//        printf("Process(pid:%d) uses %I64d%% cpu at %02d:%02d.%02d\n", dwProcId, cu.GetUsageEx(), st.wHour, st.wMinute, st.wSecond);
-//        ::Sleep(second);
-//    }
-//}
